@@ -1,0 +1,44 @@
+/**
+ * Created by ChengZheLin on 2019/4/20.
+ */
+.tasks {
+    .tasks-info {
+        margin-bottom: 15px;
+        
+        .hd {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .start,
+            .stop {
+                &::before {
+                    content: '';
+                    margin-right: 6px;
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+            }
+            
+            .start {
+                &::before {
+                    background-color: #85ce61;
+                }
+            }
+            
+            .stop {
+                &::before {
+                    background-color: #f56c6c;
+                }
+            }
+        }
+        
+        .tasks-content {
+            font-size: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
