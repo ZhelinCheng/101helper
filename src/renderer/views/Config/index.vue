@@ -45,6 +45,9 @@
       onSubmit () {
         console.log('submit!')
       }
+    },
+    created () {
+      this.form.proxy = this.$db.get('app').value()
     }
   }
 </script>
