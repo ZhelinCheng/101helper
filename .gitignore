@@ -74,3 +74,4 @@ package-lock.json
 yarn-lock.json
 dist
 images
+build/*.yaml
