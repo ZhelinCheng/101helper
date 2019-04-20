@@ -1,15 +1,20 @@
 <template>
-  <div id="app">
-    <router-view></router-view>
-  </div>
+    <div id="app">
+        <Menu/>
+        <div class="container">
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 
 <script>
+  import './style/app.less'
+  import Menu from '@/components/Menu/Index.vue'
+
   export default {
-    name: 'my-project'
+    name: 'App',
+    components: {
+      Menu
+    }
   }
 </script>
-
-<style>
-  /* CSS */
-</style>
