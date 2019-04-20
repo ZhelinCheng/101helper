@@ -70,7 +70,6 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.7.2",
-    "reset-css": "^4.0.1",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",

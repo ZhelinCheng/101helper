@@ -31,20 +31,17 @@
             <el-table-column
                 prop="date"
                 label="时间"
-                width="180">
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="name"
                 label="成员"
-                width="180">
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="name"
                 label="状态"
-                width="180">
-                <template slot-scope="scope">
-                    <el-tag type="success" disable-transitions>成功</el-tag>
-                </template>
+                width="150">
             </el-table-column>
             <el-table-column
                 prop="address"

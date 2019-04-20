@@ -11,7 +11,7 @@
                 route="/"
                 index="1">
                 <i class="el-icon-menu"></i>
-                <span slot="title">Home</span>
+                <span slot="title">主页</span>
             </el-menu-item>
             <el-menu-item
                 route="/tasks"
@@ -20,7 +20,13 @@
                 <span slot="title">任务</span>
             </el-menu-item>
             <el-menu-item
-                index="3"
+                route="/account"
+                index="3">
+                <i class="el-icon-star-off"></i>
+                <span slot="title">账号</span>
+            </el-menu-item>
+            <el-menu-item
+                index="4"
                 route="/config"
             >
                 <i class="el-icon-setting"></i>

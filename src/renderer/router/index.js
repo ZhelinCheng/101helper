@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 const Home = () => import('../views/Home/index')
 const Config = () => import('../views/Config/index')
+const Account = () => import('../views/Account/index')
 const Tasks = () => import('../views/Tasks/index')
 
 Vue.use(Router)
@@ -18,6 +19,11 @@ export default new Router({
       path: '/config',
       name: 'config',
       component: Config
+    },
+    {
+      path: '/account',
+      name: 'account',
+      component: Account
     },
     {
       path: '/tasks',
