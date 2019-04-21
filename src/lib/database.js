@@ -24,37 +24,20 @@ const adapter = new FileSync(path.join(STORE_PATH, '/101helper.json'))
 const db = Datastore(adapter)
 db._.mixin(LodashId)
 
-// 程序配置
+// 初次运行初始化
 if (!db.has('app').value()) {
-  db.set('app', {
-    browser: false,
-    browserPath: '',
-    notice: false,
-    proxy: '',
-    proxyKey: '',
-    screenshot: false,
-    screenshotPath: ''
+  db.defaults({
+    app: {
+      browser: false,
+      browserPath: '',
+      notice: false,
+      proxy: '',
+      proxyKey: '',
+      screenshot: false,
+      screenshotPath: ''
+    },
+    account: []
   }).write()
 }
-
-// 创建账号表
-if (!db.has('account').value()) {
-  db.set('account', []).write()
-}
-/* if (!db.has('account').value()) {
-  db.set('uploaded', []).write()
-}
-
-if (!db.has('picBed').value()) {
-  db.set('picBed', {
-    current: 'weibo'
-  }).write()
-}
-
-if (!db.has('shortKey').value()) {
-  db.set('shortKey', {
-    upload: 'CommandOrControl+Shift+P'
-  }).write()
-} */
 
 export default db

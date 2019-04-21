@@ -13,7 +13,10 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: {
+        keepAlive: false
+      }
     },
     {
       path: '/config',
@@ -28,7 +31,10 @@ export default new Router({
     {
       path: '/tasks',
       name: 'tasks',
-      component: Tasks
+      component: Tasks,
+      meta: {
+        keepAlive: false
+      }
     },
     {
       path: '*',
